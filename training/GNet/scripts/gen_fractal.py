@@ -153,10 +153,6 @@ def fractal_module(hourglass_module_name, bottom_layer_name, num_output_channels
                                                          bottom_name,
                                                          num_channels_out,
                                                          hourglass_level - 1)
-        #hourglass_lower_level_str = fractal_module(hourglass_lower_level_name,
-                                                        #  bottom_name,
-                                                        #  num_channels_out,
-                                                        #  hourglass_level - 1)
     hourglass_module_str += hourglass_lower_level_str
 
 
@@ -295,7 +291,7 @@ def inception_resnet_revised_block(residual_block_name, bottom_layer_name, num_o
                                 num_channels_out,
                                 kernel_size)
     residual_block_str += conv_layer_str
-    ''' batch norm ''' # Newly added
+    ''' batch norm ''' 
     bottom_name = conv_layer_name_br1
     batch_norm_layer_name = residual_block_name + '_branch1' + '_linear_batch'
     scale_layer_name = residual_block_name + '_branch1'  + '_linear_scale'
