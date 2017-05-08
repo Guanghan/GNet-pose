@@ -1,9 +1,8 @@
 GNet-pose
 =======
---------
-
 Project Page: [http://guanghan.info/projects/guided-fractal/](http://guanghan.info/projects/Guided-Fractal/)
 
+--------
 ## Overview
 Knowledge-Guided Deep Fractal Neural Networks for Human Pose Estimation.
 
@@ -44,7 +43,7 @@ Source code release of the paper for reproduction of experimental results, and t
   matlab gen_cropped_MPII_test_images.m
   cd -
   ```
-  This will generate images with 256-by-256 resolution.
+  This will generate images with 368-by-368 resolution.
 
 - Reproduce the results with the pre-trained model:
 

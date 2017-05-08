@@ -1,0 +1,4 @@
+testing/eval_LSP/* linguist-vendored
+testing/eval_MPII/* linguist-vendored
+testing/utils_eval_lsp/* linguist-vendored
+testing/utils_eval_mpii/* linguist-vendored
