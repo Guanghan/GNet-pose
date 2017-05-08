@@ -1,0 +1,21 @@
+net: "GNet_train.prototxt"
+
+# The base learning rate, momentum and the weight decay of the network.
+type: "RMSProp"
+base_lr: 0.000001
+
+# The learning rate policy
+lr_policy: "fixed"
+
+# Display every 200 iterations
+display: 200
+
+# The maximum number of iterations
+max_iter: 490000
+
+# snapshot intermediate results
+snapshot: 4000
+snapshot_prefix: "/home/ngh/dev/POSE/POSE-dev/training/caffemodel/GNet/GNet"
+
+# solver mode: CPU or GPU
+solver_mode: GPU

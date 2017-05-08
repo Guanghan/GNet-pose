@@ -1,0 +1,75 @@
+layer {
+  name: "data"
+  type: "CPMData"
+  top: "data"
+  top: "label"
+  top: "injected_feature"
+  top: "injected_edge_feature"
+  transform_param {
+    stride: 4
+    max_rotate_degree: 30
+    crop_size_x: 256
+    crop_size_y: 256
+    scale_prob: 1
+    scale_min: 0.75
+    scale_max: 1.25
+    target_dist: 1.171
+    center_perterb_max: 0
+    do_clahe: false
+  }
+  cpmdata_param{
+    source: "/home/ngh/dev/POSE/POSE-dev/training/lmdb/MPI_LEEDS_alltrain"
+    batch_size: 2
+    backend: LMDB
+  }
+}
+layer {
+  name: "label_lower"
+  type: "Slice"
+  bottom: "label"
+  top: "label_lower"   #label for the primary person only
+  top: "label_1st_lower" #label for all persons, discard
+  slice_param {
+    slice_point: 15
+    axis: 1
+  }
+}
+layer {
+  name: "label_slice"
+  type: "Slice"
+  bottom: "label_lower"
+  top: "label_lower_joints"
+  top: "label_lower_background"
+  slice_param {
+    slice_point: 14
+    axis: 1
+  }
+}
+layer {
+  name: "loss_null"
+  type: "EuclideanLoss"
+  bottom: "label_1st_lower"
+  bottom: "label_1st_lower"
+  top: "loss_null"
+  loss_weight: 0
+}
+
+layer {
+  name: "image"
+  type: "Slice"
+  bottom: "data"
+  top: "image"
+  top: "center_map"
+  slice_param {
+    slice_point: 3
+    axis: 1
+  }
+}
+layer {
+  name: "loss_null2"
+  type: "EuclideanLoss"
+  bottom: "center_map"
+  bottom: "center_map"
+  top: "loss_null2"
+  loss_weight: 0
+}
