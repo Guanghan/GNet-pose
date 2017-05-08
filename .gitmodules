@@ -1,0 +1,3 @@
+[submodule "GNet-caffe"]
+	path = GNet-caffe
+	url = https://github.com/Guanghan/GNet-caffe
