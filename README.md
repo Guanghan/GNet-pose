@@ -104,15 +104,16 @@ GNet-pose is released under the Apache License Version 2.0 (refer to the LICENSE
 
 ---
 ## Citation
-The details are published as a technical report on arXiv. If you use the code and models, please cite the following paper:
-[arXiv:1705.02407](http://arxiv.org/abs/1705.02407).
+If you use the code and models, please cite the following paper:
+[TMM 2017](http://ieeexplore.ieee.org/document/8064661/).
 
-	@article{ning2017knowledge,
-	  title={Knowledge-Guided Deep Fractal Neural Networks for Human Pose Estimation},
-	  author={Ning, Guanghan and Zhang, Zhi and He, Zhihai},
-	  journal={arXiv preprint arXiv:1705.02407},
-	  year={2017}
-	}
+	@article{ning2017knowledge, 
+	 author={G. Ning and Z. Zhang and Z. He}, 
+         journal={IEEE Transactions on Multimedia}, 
+         title={Knowledge-Guided Deep Fractal Neural Networks for Human Pose Estimation}, 
+         year={2017}, 
+         doi={10.1109/TMM.2017.2762010}, 
+         ISSN={1520-9210}, }
 
 
 ---
