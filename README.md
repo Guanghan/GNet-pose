@@ -3,6 +3,7 @@ GNet-pose
 Project Page: [http://guanghan.info/projects/guided-fractal/](http://guanghan.info/projects/Guided-Fractal/)
 
 UPDATE 9/27/2018:
+
 Prototxts and model that achieved 93.9Pck on LSP dataset. 
 [http://guanghan.info/download/Data/GNet_update.zip](http://guanghan.info/download/Data/GNet_update.zip)
 
