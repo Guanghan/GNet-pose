@@ -2,6 +2,13 @@ GNet-pose
 =======
 Project Page: [http://guanghan.info/projects/guided-fractal/](http://guanghan.info/projects/Guided-Fractal/)
 
+UPDATE 9/27/2018:
+Prototxts and model that achieved 93.9Pck on LSP dataset. 
+[http://guanghan.info/download/Data/GNet_update.zip](http://guanghan.info/download/Data/GNet_update.zip)
+
+When I was replying e-mails, it occurred to me that the models that I had uploaded was around May/June 2017 (performance in old arxiv version), and in August 2017 the performance was improved to 93.9 on LSP with a newer caffe version which fixed the downsampling and/or upsampling deprecation problem (Yeah, it "magically" improved the performance).
+The best model was 94.0071 on LSP dataset, but it was not uploaded nor published on the benchmark. 
+
 --------
 ## Overview
 Knowledge-Guided Deep Fractal Neural Networks for Human Pose Estimation.
